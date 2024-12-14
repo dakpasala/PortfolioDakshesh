@@ -1,21 +1,20 @@
 export const navItems = [
     { name: "About", link: "#about" },
-    { name: "Resume", link: "https://drive.google.com/file/d/1udileHqcrbD09gjuFpUZlHgpOajw3UU_/view?usp=sharing" },
+    { name: "Resume", link: "https://drive.google.com/file/d/1t0t3pNAnb0-jRQXMYU1aDuIkMyPkJ2QV/view?usp=sharing" },
     { name: "Projects", link: "#projects" },
     //{ name: "Testimonials", link: "#testimonials" },
-    { name: "Blogs", link: "https://dev.to/akashjana"},
     { name: "Contact", link: "#contact" },
   ];
   
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize team/client collaboration, fostering open communication ",
+      title: "I prioritize becoming better and better each day",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "/PicPort.webp",
       spareImg: "",
     },
     {
@@ -59,51 +58,41 @@ export const navItems = [
       img: "/b5.svg",
       spareImg: "/grid.svg",
     },
-    {
-      id: 6,
-      title: "Do you want to start a project together?",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-      img: "",
-      spareImg: "",
-    },
   ];
   
   export const projects = [
         {
       id: 1,
-      title: "CopilotMate",
-      des: "CopilotMate is an open-source personal assistant designed to streamline productivity with an intuitive interface and a suite of essential tools.",
-      img: "/copilotmate.png",
+      title: "AI LinkedIn Strategist GPT",
+      des: "The LinkedIn Strategist GPT is a LLM used for start-up CEO's to develop useful LinkedIn posts to promote their company",
+      img: "/LinkedInGpt.webp",
       iconLists: ["/next.svg",  "/tail.svg", "/ts.svg", "/fm.svg"],
-      link: "https://youtu.be/qPVRPUH8ewU?si=PmCxfpnI30lgJRd0",
+      link: "just-radon-3e4.notion.site/LinkedIn-Content-Strategist-GPT-d198219afad843879dac0ec3a0858c5f",
     },
     {
       id: 2,
-      title: "Mystery Message",
-      des: "Mystery Message allows users to send and receive anonymous messages, ensuring privacy and fostering honest communication without revealing identities.",
-      img: "/p1.png",
+      title: "RASLO Network Speeds",
+      des: "This visuals website is a tool for RASLO to display their newtork speeds",
+      img: "/visuals.png",
       iconLists: ["/next.svg","/re.svg", "/tail.svg", "/ts.svg","/mongo.svg"],
-      link: "github.com/AkashJana18/nextjs-project",
+      link: "raslo.vercel.app/",
     },
     {
       id: 3,
-      title: "Cryptack - Cryptocurrency tracker",
-      des: "Compare different cryptocurrencies, view their graphs—prices, total volumes, market cap, etc.",
-      img: "/p2.png",
+      title: "Nike AR Filter",
+      des: "A filter that displays the old logos of Nike using hand gestures. Made for SnapChat!",
+      img: "/arfilter.svg",
       iconLists: ["/re.svg", "/css.svg", "/js.svg", "/chartjs.svg", "/fm.svg", "/mui.svg"],
-      link: "cryptack.netlify.app/",
+      link: "",
     },
   
     {
       id: 4,
-      title: "React Quiz with Timer",
-      des: "React Quiz with Timer and Score is a React-based quiz app that tracks scores and time in real-time.",
-      img: "/p4.png",
+      title: "HealthDipity",
+      des: "An application used to track your daily diet, goals, etc etc... Made with my CSC 307 group :)",
+      img: "/healthdipity.png",
       iconLists: ["/re.svg",  "/css.svg", "/js.svg"],
-      link: "react-quiz-with-timer.netlify.app/",
+      link: "healthdipity.vercel.app/login",
     },
   ];
   
@@ -176,29 +165,29 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Pretember Challenge",
-      desc: "Developed CopilotMate, personal AI assistant which integrates tools like a to-do list, ai-enabled spreadsheet, expense tracker and other features.",
+      title: "Software Engineering Intern at Applied Materials",
+      desc: "Developed an interactive tool using RShiny and Python to display hiearchal visuals for parts",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Open Source",
-      desc: "Developed a JSON Field Renaming Component in Golang for Instill AI, implementing logic for renaming fields with conflict resolution. Additionally, created comprehensive unit tests to ensure its functionality and robustness",
+      title: "Engineering Consultant at J&M Products",
+      desc: "Developed an automated system using Ardunios and C++ to track Machine Data",
       className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance Project",
-      desc: "Developed a web application for a client, handling both design and implementation using React.",
+      title: "National System Administrator At Hack4Impact",
+      desc: "Managed Hack4Impact's clouds and notions. Currently working on revamping the website using Next.js and Vercel",
       className: "md:col-span-2",
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Team Led",
-      desc: "Led a team of students in creating a project for a hackathon, focusing on frontend development and project management.",
+      title: "Lead Software Engineering Consultant at RASLO",
+      desc: "Led a team of students in creating a project for a SLO-Based Company (Raslo).",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
@@ -209,16 +198,11 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
-      href: "https://github.com/AkashJana18",
-    },
-    {
-      id: 2,
-      img: "/twit.svg",
-      href: "https://x.com/Akashj_01",
+      href: "https://github.com/dakpasala",
     },
     {
       id: 3,
       img: "/link.svg",
-      href: "https://www.linkedin.com/in/akashjana",
+      href: "https://www.linkedin.com/in/daksheshpasala",
     },
   ];

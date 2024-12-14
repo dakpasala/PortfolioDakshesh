@@ -10,17 +10,17 @@ const Hero = () => {
       text: "I",
     },
     {
-      text: "Build",
+      text: "Aspire",
     },
     {
-      text: "High-performance",
+      text: "To",
     },
     {
-      text: "Web",
+      text: "Become",
       className: "text-purple dark:text-purple",
     },
     {
-      text: "Applications",
+      text: "Better",
       className: "text-purple dark:text-purple",
     },
   ];
@@ -50,19 +50,19 @@ const Hero = () => {
       <div className="flex justify-center relative my-20-z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <img
-            src="/dp.jpg"
+            src="/dakshesh.png"
             alt="profile-pic"
             className="rounded-full w-80 h-80 border-2 border-white-100 mb-5"
           />
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Akash Jana
+            Dakshesh Pasala
           </h2>
           <TypewriterEffect
             className="text-center md:text-5xl lg:text-6xl my-5"
             words={words}
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Akash, a Web Developer, Open Source and AI Enthusiast.
+            Hi, I&apos;m Dakshesh, a Third Year Computer Engineering Major at Cal Poly.
           </p>
 
           <a href="#projects" className="cursor-pointer">
