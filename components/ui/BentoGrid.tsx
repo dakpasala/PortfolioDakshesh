@@ -7,7 +7,12 @@ import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
-import { BackgroundGradientAnimation } from "./Gradientbg";
+import dynamic from "next/dynamic";
+const BackgroundGradientAnimation = dynamic(
+  () => import("./Gradientbg").then((mod) => mod.BackgroundGradientAnimation),
+  { ssr: false } // Disable server-side rendering
+);
+
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
