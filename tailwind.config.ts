@@ -8,6 +8,15 @@ const {
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config = {
+  safelist: [
+    { pattern: /^bg-/, },
+    { pattern: /^text-/, },
+    { pattern: /^animate-/, },
+    { pattern: /^p-\d/, },
+    { pattern: /^m-\d/, },
+    { pattern: /^border-/, },
+    { pattern: /^shadow-/, },
+  ], 
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
