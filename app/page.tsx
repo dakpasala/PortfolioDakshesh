@@ -24,6 +24,7 @@ export default function Home() {
         <Approach />
         <Footer />
       </div>
+      <div className="bg-red-500 h-screen">Tailwind Test</div>
     </main>
   );
 }

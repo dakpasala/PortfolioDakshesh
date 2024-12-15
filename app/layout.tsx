@@ -27,13 +27,6 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
-      <body
-        className={inter.className}
-        style={{
-          backgroundColor: "red",
-          color: "white",
-        }}
-      ></body>
     </html>
   );
 }
