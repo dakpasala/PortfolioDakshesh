@@ -8,15 +8,40 @@ const {
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config = {
-  // safelist: [
-  //   { pattern: /^bg-/, },
-  //   { pattern: /^text-/, },
-  //   { pattern: /^animate-/, },
-  //   { pattern: /^p-\d/, },
-  //   { pattern: /^m-\d/, },
-  //   { pattern: /^border-/, },
-  //   { pattern: /^shadow-/, },
-  // ], 
+  safelist: [
+    // General layout and spacing
+    "flex", "flex-1", "flex-col", "flex-wrap", "items-center", "justify-center", "justify-between",
+    "gap-2", "gap-4", "gap-6", "gap-10", "gap-x-20", "gap-y-2",
+    "p-2", "p-3", "p-4", "p-5", "p-10", "py-6", "py-10", "py-20", "px-4", "px-5", "px-6", "px-10",
+    "m-4", "my-5", "my-10", "my-20", "mt-5", "mt-7", "mt-10", "mt-12", "mb-3", "mb-5", "mb-10", "mb-12", "mb-[100px]",
+    "min-w-40", "w-full", "w-[80vw]", "max-w-sm", "sm:w-[570px]", "lg:min-h-[32.5rem]", "lg:w-10", "lg:h-10", "w-8", "h-8",
+  
+    // Grid and height classes
+    "grid", "relative", "absolute", "overflow-hidden", "h-[30vh]", "h-[32rem]", "h-[40vh]", "h-[50vh]", "sm:h-[40vh]", "sm:h-[41rem]", "top-0", "bottom-0", "z-10",
+    "rounded-3xl", "lg:rounded-3xl",
+  
+    // Typography
+    "text-start", "text-center", "text-sm", "text-base", "text-lg", "text-xl", "text-2xl", "text-4xl", "text-5xl", "text-6xl", "text-purple",
+    "lg:text-2xl", "md:text-xl", "line-clamp-1", "line-clamp-2", "font-bold", "font-normal", "font-light", "lg:font-normal", "md:text-xs",
+  
+    // Colors
+    "text-black", "text-white", "text-white-100", "text-white-200", "text-purple", "bg-black", "bg-white",
+    "dark:bg-black", "border", "border-black/[0.2]", "border-white/[0.1]", "border-white/[0.2]", "bg-opacity-75", "bg-neutral-200",
+  
+    // Positioning
+    "top-0", "left-0", "bottom-0", "right-0", "absolute", "relative", "transform", "translate-x-[-50%]", "translate-x-[-5px]",
+    "z-10", "pointer-events-none",
+  
+    // Borders and rounded styles
+    "border", "border-white/[.2]", "rounded-full", "lg:w-10", "lg:h-10", "w-8", "h-8",
+  
+    // IconCloud and Skills specific
+    "my-10", "py-10", "text-purple", "text-center", "heading", "bg-black", "dark:bg-black",
+  
+    // Responsive fixes and other positions
+    "sm:w-[570px]", "sm:h-[41rem]", "sm:h-[40vh]", "lg:min-h-[32.5rem]", "w-[80vw]", "h-[32rem]", "h-[30vh]",
+  ],
+  
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
