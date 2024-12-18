@@ -9,37 +9,64 @@ const {
 
 const config = {
   safelist: [
-    // General layout and spacing
-    "flex", "flex-1", "flex-col", "flex-wrap", "items-center", "justify-center", "justify-between",
-    "gap-2", "gap-4", "gap-6", "gap-10", "gap-x-20", "gap-y-2",
-    "p-2", "p-3", "p-4", "p-5", "p-10", "py-6", "py-10", "py-20", "px-4", "px-5", "px-6", "px-10",
-    "m-4", "my-5", "my-10", "my-20", "mt-5", "mt-7", "mt-10", "mt-12", "mb-3", "mb-5", "mb-10", "mb-12", "mb-[100px]",
-    "min-w-40", "w-full", "w-[80vw]", "max-w-sm", "sm:w-[570px]", "lg:min-h-[32.5rem]", "lg:w-10", "lg:h-10", "w-8", "h-8",
+    // General Layout
+    "relative", "absolute", "top-0", "bottom-0", "left-0", "right-0", "w-full", "h-full", 
+    "mx-auto", "my-6", "my-10", "mt-5", "mt-7", "mt-10", "mt-12", "mb-3", "mb-5", "mb-10", 
+    "mb-12", "overflow-hidden", "flex", "flex-col", "flex-wrap", "inline", "inline-block", 
+    "text-center", "items-center", "justify-center", "justify-between", "space-x-1",
   
-    // Grid and height classes
-    "grid", "relative", "absolute", "overflow-hidden", "h-[30vh]", "h-[32rem]", "h-[40vh]", "h-[50vh]", "sm:h-[40vh]", "sm:h-[41rem]", "top-0", "bottom-0", "z-10",
-    "rounded-3xl", "lg:rounded-3xl",
+    // Padding and Margins
+    "p-2", "p-3", "p-4", "p-5", "p-10", "px-4", "px-5", "px-6", "px-8", "px-10", "py-4", "py-5", 
+    "py-6", "py-10", "py-20", "pb-2", "gap-2", "gap-4", "gap-6", "gap-10", "gap-16",
+  
+    // Grid and Positioning
+    "grid", "grid-cols-1", "md:grid-cols-6", "lg:grid-cols-5", "md:grid-row-7", "justify-start", 
+    "top-10", "inset-0", "inset-x-0", "ml-[0.09375rem]", "mt-4", "z-10", "z-20", "z-40", "z-50", 
+    "z-[1]", "z-[60]", "z-[5000]", "translate-x-[-50%]", "translate-y-[-50%]", "-top-0.5", 
+    "-left-0.5", "right-0", "bottom-0",
   
     // Typography
-    "text-start", "text-center", "text-sm", "text-base", "text-lg", "text-xl", "text-2xl", "text-4xl", "text-5xl", "text-6xl", "text-purple",
-    "lg:text-2xl", "md:text-xl", "line-clamp-1", "line-clamp-2", "font-bold", "font-normal", "font-light", "lg:font-normal", "md:text-xs",
+    "text-start", "text-center", "text-sm", "text-base", "text-lg", "text-xl", "text-2xl", 
+    "text-4xl", "text-5xl", "text-6xl", "text-xs", "sm:text-base", "sm:text-xl", "md:text-3xl", 
+    "lg:text-5xl", "xl:text-5xl", "text-white", "text-black", "dark:text-white", "text-purple", 
+    "text-neutral-600", "text-neutral-200", "text-[#C1C2D3]", "font-bold", "font-light", 
+    "font-normal", "font-extralight", "leading-[1.6]", "whitespace-nowrap",
   
-    // Colors
-    "text-black", "text-white", "text-white-100", "text-white-200", "text-purple", "bg-black", "bg-white",
-    "dark:bg-black", "border", "border-black/[0.2]", "border-white/[0.1]", "border-white/[0.2]", "bg-opacity-75", "bg-neutral-200",
+    // Backgrounds and Borders
+    "bg-black", "bg-white", "bg-transparent", "bg-gradient-to-t", "bg-gradient-to-b", 
+    "bg-slate-950", "bg-neutral-200", "border", "border-white/[0.1]", "border-white/[0.2]", 
+    "border-black/[0.2]", "border-slate-800", "rounded-3xl", "rounded-full", "rounded-[6px]", 
+    "rounded-sm", "border-b-0",
   
-    // Positioning
-    "top-0", "left-0", "bottom-0", "right-0", "absolute", "relative", "transform", "translate-x-[-50%]", "translate-x-[-5px]",
-    "z-10", "pointer-events-none",
+    // Colors and Gradients
+    "bg-gradient-to-r", "from-indigo-500", "to-red-500", "from-gray-950", "to-[84%]", 
+    "from-emerald-400/0", "via-emerald-400/90", "to-emerald-400/0", "dark:bg-black", "bg-opacity-75", 
+    "text-white-200", "pointer-events-none", "opacity-70",
   
-    // Borders and rounded styles
-    "border", "border-white/[.2]", "rounded-full", "lg:w-10", "lg:h-10", "w-8", "h-8",
+    // Animations and Transitions
+    "animate-scroll", "animate-[spin_2s_linear_infinite]", "animate-spotlight", 
+    "duration-200", "duration-300", "duration-700", "duration-3", "transition", 
+    "hover:shadow-xl", "hover:bg-transparent", "hover:[animation-play-state:paused]", 
+    "hover:text-neutral-500", "group-hover/pin:opacity-100", "opacity-0", "opacity-1", 
+    "opacity-[0.8]", "hidden", "hover:opacity-100",
   
-    // IconCloud and Skills specific
-    "my-10", "py-10", "text-purple", "text-center", "heading", "bg-black", "dark:bg-black",
+    // Width and Height
+    "w-[4px]", "w-[80vw]", "w-full", "w-max", "w-screen", "h-4", "h-20", "h-40", "h-72", "h-80", 
+    "h-96", "h-[calc(100%_+_4px)]", "md:w-[60vw]", "md:h-[40vh]", "md:h-[40rem]", "lg:h-10", 
+    "lg:w-10", "lg:h-12", "lg:w-[84%]", "sm:w-[570px]", "sm:h-[40vh]", "sm:h-[41rem]", 
+    "max-w-96", "max-w-full", "max-w-7xl", "min-w-full", "min-w-40",
   
-    // Responsive fixes and other positions
-    "sm:w-[570px]", "sm:h-[41rem]", "sm:h-[40vh]", "lg:min-h-[32.5rem]", "w-[80vw]", "h-[32rem]", "h-[30vh]",
+    // Flex and Grid Specific
+    "flex-shrink-0", "flex-nowrap", "sm:w-[570px]", "sm:h-[41rem]", "md:row-span-1", "md:col-span-2",
+  
+    // Utilities for Effects and Components
+    "backdrop-blur", "backdrop-blur-3xl", "bg-[radial-gradient(#CBACF9_40%,transparent_60%)]", 
+    "text-xs", "text-lg", "lg:gap-8", "p-[3px]", "shadow-input", "shadow-[0_8px_16px_rgb(0_0_0/0.4)]", 
+    "shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1)]", "rounded-[50%]", "shadow-[0_0_0_1px_rgba(25,28,33,0.08)]", 
+  
+    // Safe for Animations
+    "motion-reduce:animate-none", "transform", "translate-x-0", "scale-100", 
+    "translate-y-[14px]", "h-[11.25rem]", "w-[11.25rem]", "blur-[3px]", "blur-[2px]", "backdrop-blur-xl",
   ],
   
   darkMode: ["class"],
